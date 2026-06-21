@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Bukti Pembayaran - Mie Pedes Meledak</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🌶️ Mie Pedes Meledak
+    </div>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="keranjang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+    </nav>
+
+</header>
+
+<section class="upload-page">
+
+    <div class="section-title">
+
+        <h2>Upload Bukti Pembayaran</h2>
+
+        <p>
+            Unggah bukti transfer untuk mempercepat verifikasi pesanan.
+        </p>
+
+    </div>
+
+    <div class="upload-container">
+
+        <div class="upload-card">
+
+            <div class="upload-icon">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+
+            <h3>Unggah Bukti Transfer</h3>
+
+            <p>
+                Format JPG, JPEG, atau PNG dengan ukuran maksimal 5 MB.
+            </p>
+
+            <input type="file" id="bukti" accept="image/*">
+
+            <label for="bukti" class="upload-btn">
+                Pilih File
+            </label>
+
+            <div class="preview-area">
+
+                <img id="previewImage"
+                src=""
+                alt="Preview Bukti">
+
+                <p id="previewText">
+                    Belum ada file dipilih
+                </p>
+
+            </div>
+
+            <a href="status-pesanan.html"
+            class="btn-primary upload-submit">
+
+                Kirim Bukti Pembayaran
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Mie Pedes Meledak
+
+</footer>
+
+<script>
+
+const buktiInput = document.getElementById("bukti");
+const previewImage = document.getElementById("previewImage");
+const previewText = document.getElementById("previewText");
+
+buktiInput.addEventListener("change", function(){
+
+    const file = this.files[0];
+
+    if(file){
+
+        const reader = new FileReader();
+
+        reader.onload = function(e){
+
+            previewImage.src = e.target.result;
+
+            previewImage.style.display = "block";
+
+            previewText.style.display = "none";
+
+        }
+
+        reader.readAsDataURL(file);
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

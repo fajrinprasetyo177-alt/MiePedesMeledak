@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang - Mie Pedes Meledak</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🌶️ Mie Pedes Meledak
+    </div>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="keranjang.html" class="active">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+    </nav>
+
+</header>
+
+<section class="cart-page">
+
+    <div class="section-title">
+
+        <h2>Keranjang Belanja</h2>
+
+        <p>
+            Periksa kembali pesanan Anda sebelum checkout.
+        </p>
+
+    </div>
+
+    <div class="cart-container">
+
+        <!-- LIST PRODUK -->
+        <div class="cart-items">
+
+            <!-- ITEM 1 -->
+            <div class="cart-item">
+
+                <img src="https://images.unsplash.com/photo-1617622141573-3cb54b49f2dd?w=600"
+                alt="Mie">
+
+                <div class="cart-info">
+
+                    <h3>Mie Meledak Komplit</h3>
+
+                    <p>Level 7 • Telur • Sosis</p>
+
+                    <span>Rp28.000</span>
+
+                </div>
+
+                <div class="cart-qty">
+
+                    <button>-</button>
+
+                    <span>1</span>
+
+                    <button>+</button>
+
+                </div>
+
+                <button class="delete-btn">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="cart-item">
+
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600"
+                alt="Es Teh">
+
+                <div class="cart-info">
+
+                    <h3>Es Teh Manis</h3>
+
+                    <p>Minuman</p>
+
+                    <span>Rp6.000</span>
+
+                </div>
+
+                <div class="cart-qty">
+
+                    <button>-</button>
+
+                    <span>2</span>
+
+                    <button>+</button>
+
+                </div>
+
+                <button class="delete-btn">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- RINGKASAN -->
+        <div class="cart-summary">
+
+            <h3>Ringkasan Pesanan</h3>
+
+            <div class="summary-item">
+
+                <span>Subtotal</span>
+
+                <span>Rp40.000</span>
+
+            </div>
+
+            <div class="summary-item">
+
+                <span>Biaya Layanan</span>
+
+                <span>Rp2.000</span>
+
+            </div>
+
+            <div class="summary-item">
+
+                <span>Ongkir</span>
+
+                <span>Rp5.000</span>
+
+            </div>
+
+            <hr>
+
+            <div class="summary-item total">
+
+                <span>Total</span>
+
+                <span>Rp47.000</span>
+
+            </div>
+
+            <a href="checkout.html" class="btn-primary checkout-btn">
+
+                Checkout
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Mie Pedes Meledak
+
+</footer>
+
+</body>
+</html>
